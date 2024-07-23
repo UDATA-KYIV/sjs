@@ -1,0 +1,25 @@
+.content {
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  gap: 300px;
+
+  padding: 0 130px;
+
+  .listContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
+    .listItemText {
+      cursor: pointer;
+    }
+
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
