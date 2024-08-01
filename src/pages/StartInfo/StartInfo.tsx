@@ -87,6 +87,8 @@ const StartInfo = () => {
                   <ListItem>{capitalizeFirstLetter(key)}:</ListItem>
                   <ListItem className={styles.listContainer}>
                     {system.map((part: SystemPart) => {
+                      const hideOrShowText = visibility[part.id] ? "Hide" : "Show";
+
                       return (
                         <>
                           <Tooltip
@@ -100,7 +102,7 @@ const StartInfo = () => {
                                 <ListItem
                                   className={styles.cursor}
                                   onClick={() => toggleVisibility(part.id)}>
-                                  <ListItemText>Hide</ListItemText>
+                                  <ListItemText>{hideOrShowText}</ListItemText>
                                 </ListItem>
                                 <ListItem className={styles.cursor}>
                                   <ListItemText>Look at</ListItemText>
