@@ -1,3 +1,5 @@
+//const path = require("path");
+
 module.exports = {
   module: {
     rules: [
@@ -24,6 +26,23 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false,
+        },
+      },
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: "javascript/auto",
+      },
     ],
   },
+  devtool: "source-map",
+  ignoreWarnings: [
+    (warning) =>
+      warning.message.includes("Failed to parse source map") ||
+      warning.message.includes("ENOENT: no such file or directory"),
+  ],
 };

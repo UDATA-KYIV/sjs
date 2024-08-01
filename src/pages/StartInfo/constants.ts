@@ -28,7 +28,7 @@ export interface SystemPart {
   name: string;
 }
 
-interface SystemsTest {
+export interface SystemsTest {
   global: SystemPart[];
   pipes: SystemPart[];
   other: SystemPart[];

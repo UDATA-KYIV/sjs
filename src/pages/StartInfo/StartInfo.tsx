@@ -15,6 +15,7 @@ const StartInfo = () => {
     partSystem3: true,
     partSystemOt0her: true,
   });
+
   //const [anchor, setAnchor] = useState<HTMLElement | null>(null);
 
   //const open = useMemo(() => Boolean(anchor), [anchor]);
@@ -102,7 +103,7 @@ const StartInfo = () => {
                                   <ListItemText>Hide</ListItemText>
                                 </ListItem>
                                 <ListItem className={styles.cursor}>
-                                  <ListItemText>Look in</ListItemText>
+                                  <ListItemText>Look at</ListItemText>
                                 </ListItem>
                               </List>
                             }
